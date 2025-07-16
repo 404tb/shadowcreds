@@ -79,6 +79,7 @@ CustomData     : Variable
 
 - [Microsoft KeyCredential Documentation](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-adts/a90263c5-75c6-4d90-8f51-d3e8f6b69861)
 - [Shadow Credentials Attack Explained](https://posts.specterops.io/shadow-credentials-abusing-key-trust-account-mapping-for-takeover-8ee1a53566ab)
+- [Whisker - A tool for manipulating msDS-KeyCredentialLink](https://github.com/eladshamir/Whisker)
 
 ## Legal Disclaimer
 
