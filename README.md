@@ -14,7 +14,7 @@ A Python implementation for performing shadow credentials attacks against Active
 ## Installation
 
 ```bash
-git clone https://github.com/your-repo/shadow-creds.git
+git clone [https://github.com/wutless/shadowcreds](https://github.com/wutless/shadowcreds)
 cd shadow-creds
 pip install -r requirements.txt
 ```
