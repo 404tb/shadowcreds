@@ -1,6 +1,6 @@
 # Shadow Credentials Attack Tool
 
-A Python implementation for performing shadow credentials attacks against Active Directory machine accounts.
+A Python POC implementation for performing shadow credentials attacks against Active Directory machine accounts.
 
 ## Features
 
@@ -50,23 +50,6 @@ python3 shadowcreds.py -d dc01.corp.local -k -t TARGET$ --remove
 | `-r`, `--remove`   | Remove shadow credentials                        |
 | `-v`, `--verbose`  | Enable verbose output                            |
 
-## Technical Implementation
-
-The tool implements the exact binary structure that Active Directory expects for KeyCredentials:
-
-```text
-Version        : 4 bytes
-Flags          : 4 bytes
-KeyId          : 16 bytes (GUID)
-CreationTime   : 8 bytes (FILETIME)
-KeyUsage       : 4 bytes
-KeyProvider    : 4 bytes
-DeviceId       : 16 bytes (GUID)
-KeyMaterialLen : 4 bytes
-KeyMaterial    : Variable (DER certificate)
-CustomDataLen  : 4 bytes
-CustomData     : Variable
-```
 
 ## Defense Considerations
 
