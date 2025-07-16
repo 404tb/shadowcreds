@@ -14,7 +14,7 @@ A Python implementation for performing shadow credentials attacks against Active
 ## Installation
 
 ```bash
-git clone https://github.com/wutless/shadowcreds
+git clone https://github.com/404tb/shadowcreds
 cd shadow-creds
 pip install -r requirements.txt
 ```
@@ -23,18 +23,18 @@ pip install -r requirements.txt
 
 ### Basic Authentication
 ```bash
-python3 shadow_creds.py -d dc01.corp.local -u username -p password -t TARGET$
+python3 shadowcreds.py -d dc01.corp.local -u username -p password -t TARGET$
 ```
 
 ### Kerberos Authentication
 ```bash
 export KRB5CCNAME=/path/to/ticket.ccache
-python3 shadow_creds.py -d dc01.corp.local -k -t TARGET$
+python3 shadowcreds.py -d dc01.corp.local -k -t TARGET$
 ```
 
 ### Remove Credentials
 ```bash
-python3 shadow_creds.py -d dc01.corp.local -k -t TARGET$ --remove
+python3 shadowcreds.py -d dc01.corp.local -k -t TARGET$ --remove
 ```
 
 ## Command Line Arguments
